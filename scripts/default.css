@@ -1,0 +1,584 @@
+/* ========== COLORS ========== */
+/* ========== GLOBAL VARIABLES ========== */
+/* ====================================== */
+/* ========== GLOBAL / GENERIC ========== */
+/* ====================================== */
+html, body {
+  color: #cd65a2;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 100%;
+  width: 100%;
+  max-width: 1300px;
+  height: 5470px;
+  margin: 0 auto;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  background: white;
+  border: 2px solid #CF69AB;
+  color: #CF69AB;
+  font-weight: bold;
+  font-size: 0.875em;
+  line-height: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  color: white;
+  background: #CF69AB;
+}
+
+.dummyContainer {
+  width: inherit;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+/* ========== EMPTY CONTAINERS ========== */
+.emptyContainer {
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+}
+
+#triAnchor01 {
+  height: 5.07692vw;
+  margin-top: -6.92308vw;
+  visibility: visible;
+}
+
+#triAnchor02, #triAnchor03, #postPregAnchor01 {
+  height: 5.07692vw;
+  margin-top: -5.07692vw;
+  visibility: visible;
+}
+
+/* ========== NAV CONTAINER ========== */
+@keyframes navTranslate {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  25% {
+    -webkit-transform: translateX(238px);
+            transform: translateX(238px);
+  }
+  50% {
+    -webkit-transform: translateX(476px);
+            transform: translateX(476px);
+  }
+  100% {
+    -webkit-transform: translateX(714px);
+            transform: translateX(714px);
+  }
+}
+
+@-webkit-keyframes navTranslate {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  25% {
+    -webkit-transform: translateX(238px);
+            transform: translateX(238px);
+  }
+  50% {
+    -webkit-transform: translateX(476px);
+            transform: translateX(476px);
+  }
+  100% {
+    -webkit-transform: translateX(714px);
+            transform: translateX(714px);
+  }
+}
+
+.navContainer {
+  text-align: center;
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 72.53846%;
+  margin: -7.375% auto 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 995;
+}
+
+.navContainer .navActiveContainer {
+  width: 24.39024%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 994;
+}
+
+.navContainer .navActiveContainer #NAV_btn_active {
+  width: 100%;
+}
+
+.navContainer .navItemContainer {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid: calc(80 / 1300 * 100vw)/24.39024% 24.39024% 24.39024% 24.39024%;
+  grid-gap: 0.84836%;
+  position: absolute;
+  z-index: 997;
+}
+
+.navContainer .navItemContainer .navItem {
+  background: #ebb0c4;
+  color: white;
+  text-decoration: none;
+  padding: 10% 0;
+  display: table-cell;
+  cursor: pointer;
+}
+
+.navContainer .navItemContainer .navItem:hover {
+  background: #CF69AB;
+}
+
+.navContainer .navItemContainer span {
+  text-transform: initial;
+}
+
+/* ========== HERO CONTAINER ========== */
+.heroContainer {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  text-align: center;
+  width: 100%;
+  max-width: inherit;
+  height: 560px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  z-index: 990;
+}
+
+.heroContainer .heroBody {
+  width: 71.15385%;
+  margin-top: 5.75%;
+}
+
+.heroContainer .heroBody h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 3.75em;
+  line-height: 0.96875em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.heroContainer .heroBody h1 span {
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.heroContainer .heroBody p {
+  font-size: 1.125em;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+  margin: 3% 0 3.75% 0;
+  padding: 0;
+}
+
+.heroContainer .heroBody button {
+  width: 30%;
+  margin: 1.25% 10%;
+  padding: 1.125% 0;
+}
+
+.heroContainer .btnContainer_m {
+  visibility: hidden;
+}
+
+/* ========== BODY CONTAINER ========== */
+.bodyContainer {
+  width: 100%;
+  max-width: 1300px;
+  height: 300.76923vw;
+  margin: -1.84615vw auto;
+  padding: 0;
+}
+
+/* ========== TRIMESTER CONTAINERS ========== */
+.triContainer {
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+}
+
+.triContainer .triHed {
+  text-align: center;
+  text-transform: uppercase;
+  margin: inherit;
+  padding: 3.07692vw 0 0 0;
+}
+
+.triContainer .triHed h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 4vw;
+  line-height: 2.75vw;
+  letter-spacing: 0.2875vw;
+  margin: 0;
+  padding: 0;
+}
+
+.triContainer .triHed h1 span {
+  font-weight: 900;
+}
+
+.triContainer .triHed h2 {
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: 0.125vw;
+}
+
+.triContainer .triHed .triNavContainer {
+  font-weight: 900;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 35%;
+  height: 10px;
+  margin: 3.07692vw auto 0 auto;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  grid: 20px / auto auto auto auto;
+}
+
+.triContainer .triBody {
+  width: 57%;
+  height: 71.83908%;
+  margin: 3.07692vw auto 0 auto;
+  padding: inherit;
+  position: relative;
+}
+
+.triContainer .triBody p {
+  color: black;
+  font-size: 1.125vw;
+  line-height: 1.55vw;
+  letter-spacing: 0.0125vw;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.triContainer button {
+  visibility: hidden;
+  font-size: 4vw;
+  width: 93.75%;
+  margin-top: 8.75%;
+  padding: 3.75% 0;
+}
+
+#triContainer01 {
+  background: white;
+  height: 22.25064%;
+}
+
+#triContainer01 #tri01_01 {
+  width: 45.27027027027027%;
+  height: auto;
+  position: absolute;
+  top: 24%;
+  left: 0;
+}
+
+#triContainer01 #tri01_02 {
+  width: 56.081081081081081%;
+  height: auto;
+  padding: 0 0 0 1.204819277108434%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#triContainer02 {
+  background: #fdf4f7;
+  height: 23.27366%;
+}
+
+#triContainer02 p {
+  width: 31.25%;
+  position: absolute;
+  top: 4%;
+  right: 5%;
+}
+
+#triContainer02 #tri02_01 {
+  width: 56.081081081081081%;
+  height: auto;
+  position: absolute;
+  top: 0.75%;
+  left: 0.625%;
+}
+
+#triContainer02 #tri02_02 {
+  width: 44.594594594594595%;
+  height: auto;
+  position: absolute;
+  top: 27.5%;
+  right: 0;
+}
+
+#triContainer03 {
+  background: white;
+  height: 22.50639%;
+}
+
+#triContainer03 .triHed {
+  margin: -0.5% auto 0 auto;
+}
+
+#triContainer03 #triNavContainer03 {
+  width: 48.75%;
+}
+
+#triContainer03 #tri01_01 {
+  width: 45.27027027027027%;
+  height: auto;
+  position: absolute;
+  top: 23.75%;
+  left: 0;
+}
+
+#triContainer03 #tri01_02 {
+  width: 56.081081081081081%;
+  height: auto;
+  padding: 0 0 0 1.204819277108434%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* ========== POST PREGNANCY CONTAINER ========== */
+.postPregContainer {
+  background: #fdf4f7;
+  letter-spacing: 2px;
+  text-align: center;
+  height: 11.89258%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+}
+
+.postPregContainer h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 4vw;
+  line-height: 2.75vw;
+  letter-spacing: 0.2875vw;
+  text-transform: uppercase;
+  width: inherit;
+  margin: 4.69231% auto 0 auto;
+  padding: 0;
+}
+
+.postPregContainer h1 span {
+  font-weight: 900;
+}
+
+.postPregContainer h2 {
+  display: none;
+  font-size: 3.5vw !important;
+  text-transform: uppercase;
+  height: 2.5% !important;
+  margin-top: 8.75%;
+  width: 100% !important;
+}
+
+.postPregContainer p {
+  color: black;
+  font-size: 0.875em;
+  line-height: 1.4875em;
+  letter-spacing: 0.025vw;
+  width: 31.25%;
+  margin: 1.84615% auto 0 auto;
+  padding: 0;
+}
+
+.postPregContainer button {
+  display: none;
+  border: 1px solid #CF69AB;
+  font-weight: normal;
+  font-size: 4vw;
+  width: 92.5%;
+  margin: 7% 0;
+  padding: 3.75% 0;
+}
+
+.postPregContainer .postPregNavContainer {
+  font-weight: 900;
+  font-size: 0.875em;
+  line-height: 3em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 61.15385%;
+  margin: 2.30769vw auto 0 auto;
+  padding: inherit;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-row-gap: 3px;
+  grid-column-gap: 3.46154vw;
+}
+
+.postPregContainer .postPregNavContainer .postPregNavItem {
+  width: 12.69231vw;
+}
+
+.postPregContainer .postPregNavContainer img {
+  width: 100%;
+  height: auto;
+}
+
+.postPregContainer .postPregNavContainer_m {
+  display: none;
+  font-size: 4vw;
+  text-transform: uppercase;
+  width: 85%;
+  height: 52.5%;
+  margin: -4% auto 0 auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.postPregContainer .postPregNavContainer_m .postPregNavItem_m {
+  width: 30.46875vw;
+  margin: 0 auto;
+}
+
+.postPregContainer .postPregNavContainer_m .postPregNavItem_m img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========== BLOG CONTAINER ========== */
+.blogContainer {
+  background: white;
+  letter-spacing: 2px;
+  text-align: center;
+  height: 20%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+}
+
+.blogContainer h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 4vw;
+  line-height: 3.9vw;
+  letter-spacing: 0.225vw;
+  text-transform: uppercase;
+  width: inherit;
+  margin: 4.38462% auto 0 auto;
+  padding: 0;
+}
+
+.blogContainer h1 span {
+  font-weight: 900;
+}
+
+.blogContainer p {
+  color: black;
+  font-size: 1.0625vw;
+  line-height: 1vw;
+  letter-spacing: 0.0375vw;
+  width: 40%;
+  margin: 1.69231% auto 0 auto;
+  padding: 0;
+}
+
+.blogContainer .blogEntryContainer {
+  background: #fdf4f7;
+  width: 62.153846153846154%;
+  height: 62.659846547314578%;
+  margin: 23px auto 0 auto;
+  padding: 0;
+}
+
+.blogContainer .blogEntryContainer .blogImage {
+  background: #9a9a9a;
+  width: 47.02970297029703%;
+  height: 83.673469387755102%;
+  margin: 5% 0 0 4.331683168316832%;
+  float: left;
+}
+
+.blogContainer .blogEntryContainer .blogCopy {
+  text-align: left;
+  width: 28.465346534653465%;
+  height: 50%;
+  margin: 14.625% 0 0 -4%;
+  display: inline-block;
+}
+
+.blogContainer .blogEntryContainer .blogCopy h2 {
+  font-weight: 900;
+  font-size: 1vw;
+  letter-spacing: 0.1875vw;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.blogContainer .blogEntryContainer .blogCopy .p_desktop {
+  line-height: 1.60427vw;
+  width: 100%;
+  margin: 3.75% 0 0 0;
+  padding: 0;
+}
+
+.blogContainer .blogEntryContainer .blogCopy .p_mobile {
+  display: none;
+  font-weight: normal;
+  font-size: 4.125vw;
+  line-height: 4.875vw;
+  letter-spacing: 0.25vw;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin: 92.5% auto 0 auto;
+}
+
+.blogContainer .blogEntryContainer .blogCopy button {
+  background: #fdf4f7;
+  width: 82.5%;
+  margin: 1.53846vw auto;
+  padding: 0.76923vw 0;
+}
+
+.blogContainer .blogEntryContainer .blogCopy button:hover {
+  background: #CF69AB;
+}
+/*# sourceMappingURL=default.css.map */

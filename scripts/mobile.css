@@ -1,0 +1,383 @@
+/* ================================= */
+/* ========== DEFINITIONS ========== */
+/* ================================= */
+/* =========================================== */
+/* ========== CONSTANTS / VARIABLES ========== */
+/* =========================================== */
+/* ---------- COLORS ---------- */
+/* ---------- GLOBAL ---------- */
+/* ---------- NAV CONTAINER ---------- */
+/* ---------- BODY CONTAINER ---------- */
+/* ---------- HERO CONTAINER ---------- */
+/* ---------- POST PREGNANCY CONTAINER ---------- */
+/* ---------- BLOG CONTAINER ---------- */
+/* ============================ */
+/* ========== MOBILE ========== */
+/* ============================ */
+@media (min-width: 0px) and (max-width: 641px) {
+  html, body {
+    font-size: 1vw;
+    text-align: center;
+    height: 1062.5vw;
+  }
+  .dummyContainer {
+    background-image: url("../img/maternity_mobile.jpg");
+    background-size: cover;
+  }
+  .emptyContainer {
+    height: 16.09375vw;
+    padding-top: 0;
+    display: block;
+  }
+  #triAnchor01, #triAnchor02, #triAnchor03, #postPregAnchor01 {
+    display: none;
+  }
+  .navContainer {
+    visibility: hidden;
+  }
+  .bodyContainer {
+    margin: 6.875% auto;
+  }
+  .heroContainer {
+    background-image: url("../img/banner-mobile.jpg");
+    height: 135.9375vw;
+  }
+  .heroContainer .heroBody {
+    font-size: 1.75vw;
+    width: 51.5625%;
+    height: 60%;
+    margin-top: 23.75%;
+  }
+  .heroContainer .heroBody h1 {
+    line-height: 1.0625em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  .heroContainer .heroBody h1 span {
+    font-weight: 900;
+    letter-spacing: 3px;
+  }
+  .heroContainer .heroBody p {
+    font-size: 4vw;
+    line-height: 1.15em;
+    letter-spacing: 0.75px;
+    margin: 5.5% 10% 0 10%;
+    padding: 0;
+  }
+  .heroContainer .btnContainer {
+    visibility: hidden;
+  }
+  .heroContainer .btnContainer_m {
+    visibility: visible;
+  }
+  .heroContainer .btnContainer_m button {
+    border: 1px solid #CF69AB;
+    font-weight: normal;
+    font-size: 4vw;
+    width: 95%;
+    margin: 1.25% 0;
+    padding: 3.75% 0;
+  }
+  .triContainer {
+    height: 185.15625vw !important;
+  }
+  .triContainer .triHed {
+    width: 100%;
+    height: auto;
+    margin: 7.5% 0 0 0;
+    padding: 0;
+  }
+  .triContainer .triHed h1 {
+    font-size: 10vw !important;
+    line-height: 9.5vw !important;
+    letter-spacing: 1.25vw !important;
+    margin-top: -1% !important;
+  }
+  .triContainer .triHed h2 {
+    font-size: 4vw !important;
+    height: 20% !important;
+    margin-top: 4.75%;
+    position: relative;
+    top: -0.4%;
+  }
+  .triContainer .triHed .triNavContainer {
+    display: none !important;
+  }
+  .triContainer .triBody {
+    width: 100% !important;
+    height: 80% !important;
+    margin: 3% 0 0 0 !important;
+    padding: 0;
+  }
+  .triContainer .triBody p {
+    font-size: 3.75vw !important;
+    line-height: 4.25vw !important;
+    width: 80% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  .triContainer .triBody img {
+    width: 74.5% !important;
+    margin: 0 auto !important;
+  }
+  .triContainer .triBody button {
+    visibility: visible;
+    border: 1px solid #CF69AB;
+    font-weight: normal;
+    margin: 118.75% auto 0 auto !important;
+  }
+  #triContainer01 .triBody img {
+    top: 13.75% !important;
+    left: 0;
+  }
+  #triContainer01 .triBody #tri01_01 {
+    visibility: hidden;
+  }
+  #triContainer02 .triHed {
+    margin-top: 11.25%;
+  }
+  #triContainer02 .triBody p {
+    margin: -6% 5% 0 auto !important;
+  }
+  #triContainer02 .triBody img {
+    width: 75.125% !important;
+    top: 11.25% !important;
+    left: 13.5% !important;
+  }
+  #triContainer02 .triBody #tri02_02 {
+    visibility: hidden;
+  }
+  #triContainer02 .triBody button {
+    margin: 133% auto 0 auto !important;
+  }
+  #triContainer03 {
+    height: 189.84375vw !important;
+  }
+  #triContainer03 .triHed {
+    margin-top: 11.25%;
+  }
+  #triContainer03 .triBody img {
+    top: 13.5% !important;
+    left: 0 !important;
+  }
+  #triContainer03 .triBody #tri01_01 {
+    visibility: hidden;
+  }
+  .postPregContainer {
+    height: 157.03125vw;
+  }
+  .postPregContainer h1 {
+    font-size: 10vw !important;
+    line-height: 9.5vw !important;
+    letter-spacing: 1vw !important;
+    margin-top: -4% !important;
+    width: 100%;
+  }
+  .postPregContainer h2 {
+    display: block;
+  }
+  .postPregContainer p {
+    font-size: 3.5vw;
+    line-height: 4.125vw;
+    letter-spacing: 0.14vw;
+    width: 82.5%;
+    margin-top: 2.9375%;
+  }
+  .postPregContainer button {
+    display: initial;
+  }
+  .postPregContainer .postPregNavContainer {
+    display: none;
+  }
+  .postPregContainer .postPregNavContainer_m {
+    display: -ms-grid;
+    display: grid;
+  }
+  .blogContainer {
+    height: 193.75vw;
+  }
+  .blogContainer h1 {
+    font-size: 10vw;
+    line-height: 9.25vw;
+    letter-spacing: 1vw;
+    margin-top: 7.5%;
+  }
+  .blogContainer p {
+    font-size: 3.5vw;
+    line-height: 4.25vw;
+    letter-spacing: 0.25vw;
+    width: 75%;
+    margin-top: 3%;
+  }
+  .blogContainer .blogEntryContainer {
+    width: 100%;
+    height: 142.1875vw;
+  }
+  .blogContainer .blogEntryContainer .blogImage {
+    width: 75.625vw;
+    height: 85.15625vw;
+    margin: 16.25% 12.1875%;
+  }
+  .blogContainer .blogEntryContainer .blogCopy {
+    width: 95%;
+    height: auto;
+    margin: -115% auto 0 auto !important;
+  }
+  .blogContainer .blogEntryContainer .blogCopy h2 {
+    font-weight: 900;
+    font-size: 4vw;
+    line-height: 14vw;
+    letter-spacing: 0.5vw;
+    text-align: center;
+    margin: 0 auto !important;
+  }
+  .blogContainer .blogEntryContainer .blogCopy .p_desktop {
+    display: none;
+  }
+  .blogContainer .blogEntryContainer .blogCopy .p_mobile {
+    display: block;
+  }
+  .blogContainer .blogEntryContainer .blogCopy button {
+    border: 1px solid #CF69AB;
+    font-weight: normal;
+    font-size: 4vw;
+    width: 97.5%;
+    margin: 2.5% 1.5% 0 1%;
+    padding: 3.75% 0;
+  }
+}
+
+/* ====================================== */
+/* ========== TABLET / DESKTOP ========== */
+/* ====================================== */
+@media (min-width: 641px) and (max-width: 1300px) {
+  html, body {
+    font-size: 1.25vw;
+    height: calc(($page_height / $page_width * 100vw) + 1000px);
+  }
+  .dummyContainer {
+    background-image: url("../img/maternity_desktop.jpg");
+  }
+  .navContainer {
+    height: calc(95 / 1300 * 100vw);
+    margin: -5.5% auto 0 auto;
+  }
+  .navContainer .navItemContainer {
+    grid: calc(80 / 1300 * 100vw)/24.39024% 24.39024% 24.39024% 24.39024%;
+  }
+  .heroContainer {
+    background-image: url("../img/banner-background.jpg");
+    height: 43.07692vw;
+  }
+}
+
+/* ====================================== */
+/* ========== DESKTOP & LARGER ========== */
+/* ====================================== */
+@media (min-width: 1300px) {
+  html, body {
+    font-size: 16px;
+  }
+  .dummyContainer {
+    background-image: url("../img/maternity_desktop.jpg");
+  }
+  #triAnchor01 {
+    margin-top: -90px !important;
+  }
+  #triAnchor01, #triAnchor02, #triAnchor03, #postPregAnchor01 {
+    height: 66px;
+    margin-top: -66px;
+  }
+  .navContainer {
+    height: 95px;
+    margin: -5.5% auto 0 auto;
+  }
+  .navContainer .navItemContainer {
+    grid: 80px / 24.39% 24.39% 24.39% 24.39%;
+  }
+  .bodyContainer {
+    height: 3910px;
+    margin: -24px auto;
+  }
+  .heroContainer {
+    background-image: url("../img/banner-background.jpg");
+  }
+  .triContainer .triHed {
+    padding: 40px 0 0 0;
+  }
+  .triContainer .triHed h1 {
+    font-size: 3.125em;
+    line-height: 0.65em;
+    letter-spacing: 5px;
+  }
+  .triContainer .triHed h2 {
+    letter-spacing: 1px;
+  }
+  .triContainer .triHed .triNavContainer {
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: inherit;
+  }
+  .triContainer .triBody {
+    margin: 45px auto 0 auto;
+  }
+  .triContainer .triBody p {
+    font-size: 0.875em;
+    line-height: 1.4875em;
+    letter-spacing: 0.4625px;
+  }
+  #triContainer01 #tri01_01 {
+    top: 150px;
+  }
+  #triContainer02 #tri01_02 {
+    top: 28.75%;
+  }
+  #triContainer03 #tri01_01 {
+    top: 150px;
+  }
+  .postPregContainer h1 {
+    font-size: 3.125em;
+    line-height: 0.65em;
+    letter-spacing: 5px;
+  }
+  .postPregContainer p {
+    letter-spacing: 0.4625px;
+    margin: 30px auto 0 auto;
+  }
+  .postPregContainer .postPregNavContainer {
+    margin: 27px auto 0 auto;
+    grid-column-gap: 45px;
+  }
+  .postPregContainer .postPregNavContainer .postPregNavItem {
+    width: 165px;
+  }
+  .blogContainer h1 {
+    font-size: 3.125em;
+    line-height: 1em;
+    letter-spacing: 4px;
+    margin: 56px auto 0 auto;
+  }
+  .blogContainer p {
+    font-size: 0.875em;
+    line-height: 1.25em;
+    letter-spacing: 0.4625px;
+  }
+  .blogContainer .blogEntryContainer .blogCopy {
+    margin: 14.5% 0 0 -4%;
+  }
+  .blogContainer .blogEntryContainer .blogCopy h2 {
+    font-size: 0.875em;
+    letter-spacing: 0.125em;
+  }
+  .blogContainer .blogEntryContainer .blogCopy .p_desktop {
+    line-height: 1.45em;
+    margin: 12px 0 0 0;
+  }
+  .blogContainer .blogEntryContainer .blogCopy button {
+    margin: 25px auto;
+    padding: 10px 0;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

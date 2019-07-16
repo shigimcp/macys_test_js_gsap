@@ -1,0 +1,19 @@
+
+$page_width: 1300px;
+$page_height: 4470px;
+
+$page_width_m: 640px;
+$page_height_m: 6800px;
+
+$mobile: "(min-width: 0px) and (max-width: 640px)";
+$tablet_desktop: "(min-width: 640px) and (max-width: 1300px)";
+$desktop_n_up: "(min-width: 1300px)";
+
+@media #{$mobile} {
+}
+
+@media #{$tablet_desktop} {
+}
+
+@media #{$desktop_n_up} {
+}
