@@ -34,11 +34,13 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
+  transition: background-color 250ms;
+  -webkit-transition: background-color 250ms;
 }
 
 button:hover {
   color: white;
-  background: #CF69AB;
+  background-color: #CF69AB;
 }
 
 .dummyContainer {
@@ -149,10 +151,12 @@ button:hover {
   padding: 10% 0;
   display: table-cell;
   cursor: pointer;
+  transition: background-color 250ms;
+  -webkit-transition: background-color 250ms;
 }
 
 .navContainer .navItemContainer .navItem:hover {
-  background: #CF69AB;
+  background-color: #CF69AB;
 }
 
 .navContainer .navItemContainer span {
@@ -270,6 +274,26 @@ button:hover {
   display: -ms-grid;
   display: grid;
   grid: 20px / auto auto auto auto;
+}
+
+.triContainer .triHed .triNavContainer .triNavItem {
+  cursor: pointer;
+}
+
+.triContainer .triHed .triNavContainer .triNavItem:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 4%;
+  border-bottom: 2px solid #ebb0c4;
+  opacity: 0;
+  transition: all 375ms;
+  -webkit-transition: all 375ms;
+}
+
+.triContainer .triHed .triNavContainer .triNavItem:hover:after {
+  opacity: 1;
 }
 
 .triContainer .triBody {
@@ -437,12 +461,12 @@ button:hover {
 .postPregContainer .postPregNavContainer {
   font-weight: 900;
   font-size: 0.875em;
-  line-height: 3em;
+  line-height: 3.5em;
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
   width: 61.15385%;
-  margin: 2.30769vw auto 0 auto;
+  margin: 1.53846vw auto 0 auto;
   padding: inherit;
   display: -ms-grid;
   display: grid;
@@ -454,6 +478,23 @@ button:hover {
 
 .postPregContainer .postPregNavContainer .postPregNavItem {
   width: 12.69231vw;
+  padding-top: 5%;
+  cursor: pointer;
+}
+
+.postPregContainer .postPregNavContainer .postPregNavItem:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  border-bottom: 2px solid #ebb0c4;
+  opacity: 0;
+  transition: all 375ms;
+  -webkit-transition: all 375ms;
+}
+
+.postPregContainer .postPregNavContainer .postPregNavItem:hover:after {
+  opacity: 1;
 }
 
 .postPregContainer .postPregNavContainer img {
