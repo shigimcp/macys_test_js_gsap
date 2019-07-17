@@ -122,41 +122,31 @@ button:hover {
   z-index: 995;
 }
 
-.navContainer .navActiveContainer {
-  width: 24.39024%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 994;
-}
-
-.navContainer .navActiveContainer #NAV_btn_active {
-  width: 100%;
-}
-
 .navContainer .navItemContainer {
   width: 100%;
+  height: inherit;
   display: -ms-grid;
   display: grid;
-  grid: calc(80 / 1300 * 100vw)/24.39024% 24.39024% 24.39024% 24.39024%;
+  grid: calc(95 / 1300 * 100vw)/24.39024% 24.39024% 24.39024% 24.39024%;
   grid-gap: 0.84836%;
-  position: absolute;
   z-index: 997;
 }
 
 .navContainer .navItemContainer .navItem {
-  background: #ebb0c4;
+  background-image: url(../img/NAV_btn_rest.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   color: white;
   text-decoration: none;
-  padding: 10% 0;
-  display: table-cell;
+  height: inherit;
+  padding: 10% 0 0 0;
   cursor: pointer;
-  transition: background-color 250ms;
-  -webkit-transition: background-color 250ms;
+  transition: background-image 250ms;
+  -webkit-transition: background-image 250ms;
 }
 
 .navContainer .navItemContainer .navItem:hover {
-  background-color: #CF69AB;
+  background-image: url(../img/NAV_btn_active.svg);
 }
 
 .navContainer .navItemContainer span {
@@ -482,6 +472,16 @@ button:hover {
   cursor: pointer;
 }
 
+.postPregContainer .postPregNavContainer .postPregNavItem img {
+  width: 100%;
+  height: auto;
+}
+
+.postPregContainer .postPregNavContainer .postPregNavItem:hover > img {
+  -webkit-filter: drop-shadow(2px 2px 0 #CF69AB) drop-shadow(-2px 2px 0 #CF69AB) drop-shadow(2px -2px 0 #CF69AB) drop-shadow(-2px -2px 0 #CF69AB);
+  filter: drop-shadow(2px 2px 0 #CF69AB) drop-shadow(-2px 2px 0 #CF69AB) drop-shadow(2px -2px 0 #CF69AB) drop-shadow(-2px -2px 0 #CF69AB);
+}
+
 .postPregContainer .postPregNavContainer .postPregNavItem:after {
   content: "";
   display: block;
@@ -495,11 +495,6 @@ button:hover {
 
 .postPregContainer .postPregNavContainer .postPregNavItem:hover:after {
   opacity: 1;
-}
-
-.postPregContainer .postPregNavContainer img {
-  width: 100%;
-  height: auto;
 }
 
 .postPregContainer .postPregNavContainer_m {
