@@ -485,7 +485,7 @@ button:hover {
 .postPregContainer .postPregNavContainer .postPregNavItem:after {
   content: "";
   display: block;
-  margin: 0 auto;
+  margin: -6.25% auto 0 auto;
   width: 25%;
   border-bottom: 2px solid #ebb0c4;
   opacity: 0;
