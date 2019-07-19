@@ -5,6 +5,5 @@
 *.map
 *.scss
 snippets.*
-# scripts/*.map
-# scripts/*.scss
-# scripts/snippets.*
+
+index copy.html

@@ -133,19 +133,40 @@ button:hover {
 }
 
 .navContainer .navItemContainer .navItem {
+  color: white;
+  text-decoration: none;
+}
+
+.navContainer .navItemContainer .navItem [type=radio] {
+  display: none;
+}
+
+.navContainer .navItemContainer .navItem [type=radio]:checked ~ label > .labelContent, .navContainer .navItemContainer .navItem [type=radio]:checked ~ label > .labelLink > .labelContent {
+  background-image: url(../img/NAV_btn_active.svg);
+}
+
+.navContainer .navItemContainer .navItem label .labelLink {
+  color: white;
+  text-decoration: none;
+  width: inherit;
+  margin: -10% auto 0 auto;
+  position: absolute;
+  pointer-events: inherit;
+}
+
+.navContainer .navItemContainer .navItem label .labelContent {
   background-image: url(../img/NAV_btn_rest.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  color: white;
-  text-decoration: none;
-  height: inherit;
-  padding: 10% 0 0 0;
-  cursor: pointer;
   transition: background-image 250ms;
   -webkit-transition: background-image 250ms;
+  width: inherit;
+  height: 100%;
+  padding: 10% 0 0 0;
+  cursor: pointer;
 }
 
-.navContainer .navItemContainer .navItem:hover {
+.navContainer .navItemContainer .navItem label .labelContent:hover, .navContainer .navItemContainer .navItem label .labelContent:active, .navContainer .navItemContainer .navItem label .labelContent:visited {
   background-image: url(../img/NAV_btn_active.svg);
 }
 
