@@ -58,57 +58,61 @@ button:hover {
   visibility: hidden;
 }
 
-#triAnchor01 {
-  height: 5.07692vw;
-  margin-top: -6.92308vw;
-  visibility: visible;
+/* ========== HERO CONTAINER ========== */
+.heroContainer {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  text-align: center;
+  width: 100%;
+  max-width: inherit;
+  height: 560px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  z-index: 990;
 }
 
-#triAnchor02, #triAnchor03, #postPregAnchor01 {
-  height: 5.07692vw;
-  margin-top: -5.07692vw;
-  visibility: visible;
+.heroContainer .heroBody {
+  width: 71.15385%;
+  margin-top: 5.75%;
+}
+
+.heroContainer .heroBody h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 3.75em;
+  line-height: 0.96875em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.heroContainer .heroBody h1 span {
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.heroContainer .heroBody p {
+  font-size: 1.125em;
+  line-height: 1.25em;
+  letter-spacing: 1px;
+  margin: 3% 0 3.75% 0;
+  padding: 0;
+}
+
+.heroContainer .heroBody button {
+  width: 30%;
+  margin: 1.25% 10%;
+  padding: 1.125% 0;
+}
+
+.heroContainer .btnContainer_m {
+  visibility: hidden;
 }
 
 /* ========== NAV CONTAINER ========== */
-@keyframes navTranslate {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  25% {
-    -webkit-transform: translateX(238px);
-            transform: translateX(238px);
-  }
-  50% {
-    -webkit-transform: translateX(476px);
-            transform: translateX(476px);
-  }
-  100% {
-    -webkit-transform: translateX(714px);
-            transform: translateX(714px);
-  }
-}
-
-@-webkit-keyframes navTranslate {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  25% {
-    -webkit-transform: translateX(238px);
-            transform: translateX(238px);
-  }
-  50% {
-    -webkit-transform: translateX(476px);
-            transform: translateX(476px);
-  }
-  100% {
-    -webkit-transform: translateX(714px);
-            transform: translateX(714px);
-  }
-}
-
 .navContainer {
   text-align: center;
   font-size: 0.875em;
@@ -174,60 +178,6 @@ button:hover {
   text-transform: initial;
 }
 
-/* ========== HERO CONTAINER ========== */
-.heroContainer {
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
-  text-align: center;
-  width: 100%;
-  max-width: inherit;
-  height: 560px;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-  z-index: 990;
-}
-
-.heroContainer .heroBody {
-  width: 71.15385%;
-  margin-top: 5.75%;
-}
-
-.heroContainer .heroBody h1 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 3.75em;
-  line-height: 0.96875em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-}
-
-.heroContainer .heroBody h1 span {
-  font-weight: 900;
-  letter-spacing: 3px;
-}
-
-.heroContainer .heroBody p {
-  font-size: 1.125em;
-  line-height: 1.25em;
-  letter-spacing: 1px;
-  margin: 3% 0 3.75% 0;
-  padding: 0;
-}
-
-.heroContainer .heroBody button {
-  width: 30%;
-  margin: 1.25% 10%;
-  padding: 1.125% 0;
-}
-
-.heroContainer .btnContainer_m {
-  visibility: hidden;
-}
-
 /* ========== BODY CONTAINER ========== */
 .bodyContainer {
   width: 100%;
@@ -238,11 +188,23 @@ button:hover {
 }
 
 /* ========== TRIMESTER CONTAINERS ========== */
+#triAnchor01 {
+  height: 5.07692vw;
+  margin-top: -6.92308vw;
+  visibility: visible;
+}
+
+#triAnchor02, #triAnchor03, #postPregAnchor01 {
+  height: 5.07692vw;
+  margin-top: -5.07692vw;
+  visibility: visible;
+}
+
 .triContainer {
   letter-spacing: 2px;
   margin: 0 auto;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .triContainer .triHed {
@@ -325,36 +287,54 @@ button:hover {
   padding: 0;
 }
 
-.triContainer button {
-  visibility: hidden;
-  font-size: 4vw;
-  width: 93.75%;
-  margin-top: 8.75%;
-  padding: 3.75% 0;
+.triContainer .triBody .triImageContainer {
+  background: #ebb0c4;
+  position: absolute;
 }
 
+.triContainer .triBody .triImageContainer img {
+  position: inherit;
+}
+
+.triContainer .triBody .button_m {
+  visibility: hidden;
+}
+
+/* ========== TRIMESTER CONTAINER - FIRST TRIMESTER ========== */
 #triContainer01 {
   background: white;
   height: 22.25064%;
 }
 
-#triContainer01 #tri01_01 {
-  width: 45.27027027027027%;
-  height: auto;
-  position: absolute;
+#triContainer01 #triImageContainer01_01 {
+  background: none;
+  width: 45.11494%;
+  height: 75.28736%;
   top: 24%;
   left: 0;
 }
 
-#triContainer01 #tri01_02 {
-  width: 56.081081081081081%;
-  height: auto;
-  padding: 0 0 0 1.204819277108434%;
-  position: absolute;
+#triContainer01 #triImageContainer01_01 img {
+  width: 100%;
   top: 0;
   right: 0;
 }
 
+#triContainer01 #triImageContainer01_02 {
+  width: 57.47126%;
+  height: 91.95402%;
+  top: 1.75%;
+  right: 0;
+}
+
+#triContainer01 #triImageContainer01_02 img {
+  width: 97.64706%;
+  position: absolute;
+  top: -1.75%;
+  right: 0;
+}
+
+/* ========== TRIMESTER CONTAINER - SECOND TRIMESTER ========== */
 #triContainer02 {
   background: #fdf4f7;
   height: 23.27366%;
@@ -363,52 +343,74 @@ button:hover {
 #triContainer02 p {
   width: 31.25%;
   position: absolute;
-  top: 4%;
+  top: 4.25%;
   right: 5%;
 }
 
-#triContainer02 #tri02_01 {
-  width: 56.081081081081081%;
-  height: auto;
-  position: absolute;
-  top: 0.75%;
-  left: 0.625%;
+#triContainer02 #triImageContainer02_01 {
+  background: none;
+  width: 55.74713%;
+  height: 91.37931%;
+  top: 1%;
+  left: 0.75%;
 }
 
-#triContainer02 #tri02_02 {
-  width: 44.594594594594595%;
-  height: auto;
-  position: absolute;
-  top: 27.5%;
-  right: 0;
+#triContainer02 #triImageContainer02_01 img {
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
+#triContainer02 #triImageContainer02_02 {
+  width: 32.98851%;
+  height: 56.66667%;
+  bottom: -1.875%;
+  right: -1.25%;
+}
+
+#triContainer02 #triImageContainer02_02 img {
+  width: 135.29412%;
+  bottom: 2.75%;
+  right: 4%;
+}
+
+/* ========== TRIMESTER CONTAINER - THIRD TRIMESTER ========== */
 #triContainer03 {
   background: white;
   height: 22.50639%;
 }
 
 #triContainer03 .triHed {
-  margin: -0.5% auto 0 auto;
+  margin: -0.375% auto 0 auto;
 }
 
 #triContainer03 #triNavContainer03 {
   width: 48.75%;
 }
 
-#triContainer03 #tri01_01 {
-  width: 45.27027027027027%;
-  height: auto;
-  position: absolute;
-  top: 23.75%;
-  left: 0;
+#triContainer03 #triImageContainer03_01 {
+  width: 33.10345%;
+  height: 79.88506%;
+  bottom: -3.75%;
+  left: 6.125%;
 }
 
-#triContainer03 #tri01_02 {
-  width: 56.081081081081081%;
-  height: auto;
-  padding: 0 0 0 1.204819277108434%;
-  position: absolute;
+#triContainer03 #triImageContainer03_01 img {
+  width: 136.73469%;
+  top: 0;
+  left: -18.5%;
+}
+
+#triContainer03 #triImageContainer03_02 {
+  background: none;
+  width: 56.09195%;
+  height: 96.55172%;
+  top: 0;
+  right: 0;
+}
+
+#triContainer03 #triImageContainer03_02 img {
+  width: 100%;
   top: 0;
   right: 0;
 }

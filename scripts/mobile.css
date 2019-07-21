@@ -8,7 +8,6 @@
 /* ---------- GLOBAL ---------- */
 /* ---------- NAV CONTAINER ---------- */
 /* ---------- BODY CONTAINER ---------- */
-/* ---------- HERO CONTAINER ---------- */
 /* ---------- POST PREGNANCY CONTAINER ---------- */
 /* ---------- BLOG CONTAINER ---------- */
 /* ============================ */
@@ -20,27 +19,30 @@
     text-align: center;
     height: 1062.5vw;
   }
+  .button_m {
+    visibility: visible;
+    border: 1px solid #CF69AB;
+    background: white;
+    font-weight: normal;
+    font-size: 4.5vw;
+    letter-spacing: 0.0125em;
+    width: 93.75vw;
+    height: 11.71875vw;
+  }
   .dummyContainer {
     background-image: url("../img/maternity_mobile.jpg");
     background-size: cover;
   }
+  /* ========== EMPTY CONTAINER ========== */
   .emptyContainer {
     height: 16.09375vw;
     padding-top: 0;
     display: block;
   }
-  #triAnchor01, #triAnchor02, #triAnchor03, #postPregAnchor01 {
-    display: none;
-  }
-  .navContainer {
-    visibility: hidden;
-  }
-  .bodyContainer {
-    margin: 6.875% auto;
-  }
+  /* ========== HERO CONTAINER ========== */
   .heroContainer {
     background-image: url("../img/banner-mobile.jpg");
-    height: 135.9375vw;
+    height: 133.59375vw;
   }
   .heroContainer .heroBody {
     font-size: 1.75vw;
@@ -62,44 +64,47 @@
     font-size: 4vw;
     line-height: 1.15em;
     letter-spacing: 0.75px;
-    margin: 5.5% 10% 0 10%;
+    width: 75%;
+    margin: 5.5% 10% 0 12.5%;
     padding: 0;
   }
-  .heroContainer .btnContainer {
+  .heroContainer .heroBody .btnContainer {
     visibility: hidden;
   }
   .heroContainer .btnContainer_m {
-    visibility: visible;
+    margin: -0.5% 0 0 0;
   }
   .heroContainer .btnContainer_m button {
-    border: 1px solid #CF69AB;
-    font-weight: normal;
-    font-size: 4vw;
-    width: 95%;
-    margin: 1.25% 0;
+    margin: 3.0625% auto 0 auto;
     padding: 3.75% 0;
   }
-  .triContainer {
-    height: 185.15625vw !important;
+  /* ========== NAV CONTAINER ========== */
+  .navContainer {
+    visibility: hidden;
+  }
+  /* ========== BODY CONTAINER ========== */
+  .bodyContainer {
+    margin: 0 auto;
+  }
+  /* ========== TRIMESTER CONTAINERS ========== */
+  #triAnchor01, #triAnchor02, #triAnchor03, #postPregAnchor01 {
+    display: none;
   }
   .triContainer .triHed {
     width: 100%;
-    height: auto;
-    margin: 7.5% 0 0 0;
-    padding: 0;
   }
   .triContainer .triHed h1 {
     font-size: 10vw !important;
     line-height: 9.5vw !important;
     letter-spacing: 1.25vw !important;
-    margin-top: -1% !important;
+    margin: 0;
+    padding: 0;
   }
   .triContainer .triHed h2 {
     font-size: 4vw !important;
-    height: 20% !important;
-    margin-top: 4.75%;
-    position: relative;
-    top: -0.4%;
+    line-height: 5vw !important;
+    margin: 0;
+    padding: 0;
   }
   .triContainer .triHed .triNavContainer {
     display: none !important;
@@ -107,7 +112,7 @@
   .triContainer .triBody {
     width: 100% !important;
     height: 80% !important;
-    margin: 3% 0 0 0 !important;
+    margin: 2.25% 0 0 0 !important;
     padding: 0;
   }
   .triContainer .triBody p {
@@ -117,55 +122,90 @@
     margin: 0 auto !important;
     padding: 0 !important;
   }
-  .triContainer .triBody img {
-    width: 74.5% !important;
-    margin: 0 auto !important;
-  }
-  .triContainer .triBody button {
-    visibility: visible;
-    border: 1px solid #CF69AB;
-    font-weight: normal;
-    margin: 118.75% auto 0 auto !important;
-  }
-  #triContainer01 .triBody img {
-    top: 13.75% !important;
+  .triContainer .triBody .triImageContainer {
+    width: 77.34375% !important;
+    margin: 20% auto 0 auto;
+    top: 0;
     left: 0;
   }
-  #triContainer01 .triBody #tri01_01 {
+  .triContainer .triBody .button_m {
+    visibility: visible;
+    margin: 0 auto !important;
+    position: absolute;
+    bottom: 2.125%;
+    left: 2.875%;
+  }
+  /* ========== TRIMESTER CONTAINER - FIRST TRIMESTER ========== */
+  #triContainer01 {
+    height: 188.28125vw;
+  }
+  #triContainer01 .triHed {
+    margin-top: 5%;
+  }
+  #triContainer01 #triImageContainer01_01 {
     visibility: hidden;
   }
+  #triContainer01 #triImageContainer01_02 {
+    height: 104.21875vw;
+    top: 1.5%;
+  }
+  #triContainer01 #triImageContainer01_02 img {
+    top: -2.5%;
+  }
+  /* ========== TRIMESTER CONTAINER - SECOND TRIMESTER ========== */
+  #triContainer02 {
+    height: 185.15625vw;
+  }
   #triContainer02 .triHed {
-    margin-top: 11.25%;
+    margin-top: 5.375%;
   }
   #triContainer02 .triBody p {
     margin: -6% 5% 0 auto !important;
   }
-  #triContainer02 .triBody img {
-    width: 75.125% !important;
-    top: 11.25% !important;
-    left: 13.5% !important;
+  #triContainer02 .triBody .button_m {
+    bottom: 2%;
   }
-  #triContainer02 .triBody #tri02_02 {
+  #triContainer02 #triImageContainer02_01 {
+    background: #ebb0c4;
+    width: 48.125vw !important;
+    height: 104.53125vw;
+    top: 2%;
+    left: 42.25%;
+  }
+  #triContainer02 #triImageContainer02_01 img {
+    width: 75vw;
+    top: -5.375%;
+    left: -60%;
+  }
+  #triContainer02 #triImageContainer02_02 {
     visibility: hidden;
   }
-  #triContainer02 .triBody button {
-    margin: 133% auto 0 auto !important;
-  }
+  /* ========== TRIMESTER CONTAINER - THIRD TRIMESTER ========== */
   #triContainer03 {
-    height: 189.84375vw !important;
+    height: 189.0625vw;
   }
   #triContainer03 .triHed {
-    margin-top: 11.25%;
+    margin-top: 5.625%;
   }
-  #triContainer03 .triBody img {
-    top: 13.5% !important;
-    left: 0 !important;
-  }
-  #triContainer03 .triBody #tri01_01 {
+  #triContainer03 #triImageContainer03_01 {
     visibility: hidden;
   }
+  #triContainer03 #triImageContainer03_02 {
+    background: #ebb0c4;
+    width: 77.1875vw !important;
+    height: 104.53125vw !important;
+    top: 1.5%;
+    left: 0;
+  }
+  #triContainer03 #triImageContainer03_02 img {
+    width: 75vw;
+    height: 109.375vw;
+    top: -1.5%;
+    left: 2.5%;
+  }
+  /* ========== POST PREGNANCY CONTAINER ========== */
   .postPregContainer {
-    height: 157.03125vw;
+    height: 157.5vw;
   }
   .postPregContainer h1 {
     font-size: 10vw !important;
@@ -194,6 +234,7 @@
     display: -ms-grid;
     display: grid;
   }
+  /* ========== BLOG CONTAINER ========== */
   .blogContainer {
     height: 193.75vw;
   }
@@ -238,13 +279,9 @@
   .blogContainer .blogEntryContainer .blogCopy .p_mobile {
     display: block;
   }
-  .blogContainer .blogEntryContainer .blogCopy button {
-    border: 1px solid #CF69AB;
-    font-weight: normal;
-    font-size: 4vw;
-    width: 97.5%;
-    margin: 2.5% 1.5% 0 1%;
-    padding: 3.75% 0;
+  .blogContainer .blogEntryContainer .blogCopy .button_m {
+    width: 93.75vw;
+    margin: 4% 0 0 0.5%;
   }
 }
 
@@ -330,6 +367,14 @@
   }
   #triContainer01 #tri01_01 {
     top: 150px;
+  }
+  #triContainer01 #triImageContainer01_02 {
+    width: 425px;
+    height: 575px;
+  }
+  #triContainer01 #triImageContainer01_02 #tri01_02 {
+    width: 415px;
+    height: 610px;
   }
   #triContainer02 #tri01_02 {
     top: 28.75%;
