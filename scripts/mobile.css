@@ -280,6 +280,7 @@
     display: block;
   }
   .blogContainer .blogEntryContainer .blogCopy .button_m {
+    background: white;
     width: 93.75vw;
     margin: 4% 0 0 0.5%;
   }

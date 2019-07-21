@@ -24,8 +24,8 @@ body * {
 }
 
 button {
-  background: white;
   border: 2px solid #CF69AB;
+  background: white;
   color: #CF69AB;
   font-weight: bold;
   font-size: 0.875em;
