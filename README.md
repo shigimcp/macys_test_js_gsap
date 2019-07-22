@@ -1,4 +1,4 @@
-# Macy's Designer/Developer Test
+# Macy's Designer/Developer Test - Javascript/GSAP
 ## Shigeru McPherson - digital designer / art director
 
 Instructions
