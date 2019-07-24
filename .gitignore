@@ -6,7 +6,26 @@
 *.scss
 snippets.*
 
+# local (JQuery)
+jquery-3.4.1.js
+jquery-3.4.1.min.js
+
+# local (GSAP)
+CSSPlugin.js
+CSSPlugin.min.js
+EasePack.js
+EasePack.min.js
+ScrollToPlugin.js
+ScrollToPlugin.min.js
+TimelineMax.js
+TimelineMax.min.js
+TweenMax.js
+TweenMax.min.js
+
+# local (build)
 index copy.html
+default copy.js
+
 maternity_desktop.jpg
 maternity_desktop_test.jpg
 maternity_mobile.jpg

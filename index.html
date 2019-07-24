@@ -8,9 +8,19 @@
 
 		<link rel="stylesheet" type="text/css" href="scripts/default.css" />
 		<link rel="stylesheet" type="text/css" href="scripts/mobile.css" />
+		<script type="text/javascript" src="scripts/default.js"></script>
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/ScrollToPlugin.min.js"></script>
+
 	</head>
 
-	<body dir="auto">
+	<body dir="auto" onload="pageInit()">
+
+	<div class="dummyContainer" dir="ltr">
 
 		<div class="emptyContainer" id="top">&nbsp;</div>
 
@@ -34,6 +44,8 @@
 				</div>
 
 				<div class="btnContainer_m">
+					<!-- <button>A Pea in the Pod</button> -->
+					<!-- <button>Motherhood Maternity</button> -->
 					<button class="button_m">A Pea in the Pod</button>
 					<button class="button_m">Motherhood Maternity</button>
 				</div>
@@ -43,34 +55,19 @@
 		<div class="navContainer" id="navContainer01">
 
 			<div class="navItemContainer" id="navItemContainer01">
-				<div class="navItem">
-					<input type="radio" id="navItem01" name="navGroup01">
-					<label for="navItem01">
-						<div class="labelContent" id="navItem01">First Trimester<br><span>1-3 Months</span></div>
-					</label>
-				</div>
+				<div class="navItem navItemBG" id="navItem01"></div>
+				<div class="navItem navItemBG" id="navItem02"></div>
+				<div class="navItem navItemBG" id="navItem03"></div>
+				<div class="navItem navItemBG" id="navItem04"></div>
+			</div>
 
-				<div class="navItem">
-					<input type="radio" id="navItem02" name="navGroup01">
-					<label for="navItem02">
-						<div class="labelContent" id="navItem02">Second Trimester<br><span>3-6 Months</span></div>
-					</label>
-				</div>
+			<svg class="navActiveContainer" id="NAV_btn_active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 95" enable-background="new 0 0 230 95"><path fill="#CF69AB" d="M0 0v80h98l17 15 17-15h98V0z"/></svg>
 
-				<div class="navItem">
-					<input type="radio" id="navItem03" name="navGroup01">
-					<label for="navItem03">
-						<div class="labelContent" id="navItem03">Third Trimester<br><span>6-9 Months</span></div>
-					</label>
-				</div>
-
-				<div class="navItem">
-					<input type="radio" id="navItem04" name="navGroup01">
-					<label for="navItem04">
-						<div class="labelContent" id="navItem04">Post Pregnancy<br><span>Baby's Here!</span></div>
-					</label>
-				</div>
-				
+			<div class="navItemContainer" id="navItemContainer02">
+				<div class="navItem" id="navItem01" onmouseover="swapBG(this, 'img/NAV_btn_active.svg')" onmouseout="swapBG(this, 'none')" onclick="scrollToActive(this)">First Trimester<br><span>1-3 Months</span></div>
+				<div class="navItem" id="navItem02" onmouseover="swapBG(this, 'img/NAV_btn_active.svg')" onmouseout="swapBG(this, 'none')" onclick="scrollToActive(this)">Second Trimester<br><span>3-6 Months</span></div>
+				<div class="navItem" id="navItem03" onmouseover="swapBG(this, 'img/NAV_btn_active.svg')" onmouseout="swapBG(this, 'none')" onclick="scrollToActive(this)">Third Trimester<br><span>6-9 Months</span></div>
+				<div class="navItem" id="navItem04" onmouseover="swapBG(this, 'img/NAV_btn_active.svg')" onmouseout="swapBG(this, 'none')" onclick="scrollToActive(this)">Post Pregnancy<br><span>Baby's Here!</span></div>
 			</div>
 
 		</div>
@@ -160,7 +157,6 @@
 					<div class="postPregNavItem"><img id="tri01_02" src="img/postPreg_02.png">Bras</div>
 					<div class="postPregNavItem"><img id="tri01_03" src="img/postPreg_03.png">Nursing</div>
 					<div class="postPregNavItem"><img id="tri01_04" src="img/postPreg_04.png">Underwear</div>
-
 				</div>
 
 				<div class="postPregNavContainer_m" id="postPregNavContainer01_m">
@@ -195,6 +191,8 @@
 			</div>
 
 		</div>
+
+	</div>
 
 	</body>
 

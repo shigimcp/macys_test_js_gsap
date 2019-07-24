@@ -34,8 +34,8 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
-  transition: background-color 250ms;
-  -webkit-transition: background-color 250ms;
+  transition: all 250ms;
+  -webkit-transition: all 250ms;
 }
 
 button:hover {
@@ -122,60 +122,46 @@ button:hover {
   margin: -7.375% auto 0 auto;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 995;
+}
+
+.navContainer #NAV_btn_active {
+  width: 24.39024%;
+  position: absolute;
+  left: 0;
 }
 
 .navContainer .navItemContainer {
   width: 100%;
-  height: inherit;
+  height: inherit !important;
   display: -ms-grid;
   display: grid;
   grid: calc(95 / 1300 * 100vw)/24.39024% 24.39024% 24.39024% 24.39024%;
   grid-gap: 0.84836%;
-  z-index: 997;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .navContainer .navItemContainer .navItem {
+  background: none;
   color: white;
   text-decoration: none;
+  height: 90%;
+  padding: 10% 0 0 0;
+  transition: all 375ms;
+  -webkit-transition: all 375ms;
 }
 
-.navContainer .navItemContainer .navItem [type=radio] {
-  display: none;
+.navContainer .navItemContainer .navItem span {
+  text-transform: initial;
 }
 
-.navContainer .navItemContainer .navItem [type=radio]:checked ~ label > .labelContent, .navContainer .navItemContainer .navItem [type=radio]:checked ~ label > .labelLink > .labelContent {
-  background-image: url(../img/NAV_btn_active.svg);
-}
-
-.navContainer .navItemContainer .navItem label .labelLink {
-  color: white;
-  text-decoration: none;
-  width: inherit;
-  margin: -10% auto 0 auto;
-  position: absolute;
-  pointer-events: inherit;
-}
-
-.navContainer .navItemContainer .navItem label .labelContent {
+.navContainer .navItemContainer .navItemBG {
   background-image: url(../img/NAV_btn_rest.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  transition: background-image 250ms;
-  -webkit-transition: background-image 250ms;
-  width: inherit;
-  height: 100%;
-  padding: 10% 0 0 0;
-  cursor: pointer;
-}
-
-.navContainer .navItemContainer .navItem label .labelContent:hover, .navContainer .navItemContainer .navItem label .labelContent:active, .navContainer .navItemContainer .navItem label .labelContent:visited {
-  background-image: url(../img/NAV_btn_active.svg);
-}
-
-.navContainer .navItemContainer span {
-  text-transform: initial;
 }
 
 /* ========== BODY CONTAINER ========== */
