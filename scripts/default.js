@@ -1,9 +1,14 @@
 'use strict';
 
+var transDuration = 0.5;
+
+
 //<!--/* ========================= INITIALIZE PAGE ========================= */-->
 
 function pageInit() {
+
 	window.scrollTo(0, 0);
+
 }
 
 
@@ -20,15 +25,10 @@ function getDims(thisElem) {
 }
 
 
-//==================== FUNCTION: swapBG(thisImg) ====================
+//==================== FUNCTION: navOver(thisNavItem, thisColor) ====================
 
-function swapBG(thisElem, thisImgURL) {
-
-	if (thisImgURL == 'none') {
-		TweenMax.to(thisElem, 1, {backgroundImage:'none'});
-	} else {
-		TweenMax.to(thisElem, 1, {backgroundImage:'url(' + thisImgURL + ')'});
-	}
+function navOver(thisNavItem, thisColor) {
+	TweenMax.to(thisNavItem, transDuration, {backgroundColor:thisColor, ease:Power3.easeOut});
 }
 
 
@@ -38,7 +38,6 @@ function scrollToActive(thisNavItem) {
 
 	var scrollDuration = 0.5;
 	var thisAnchor;
-
 	var thisNavItemX = getDims(thisNavItem.id)[0] - getDims("navContainer01")[0];
 
 
