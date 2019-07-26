@@ -2,13 +2,11 @@
 
 var transDuration = 0.5;
 
-
-//<!--/* ========================= INITIALIZE PAGE ========================= */-->
-
 function pageInit() {
 
 	window.scrollTo(0, 0);
 
+	thisNavItem_active = document.getElementById('navItem01');
 }
 
 
@@ -34,12 +32,15 @@ function navOver(thisNavItem, thisColor) {
 
 //==================== FUNCTION: scrollToActive(thisNavItem) ====================
 
+var thisNavItem_active;
+var thisNavItemX;
+var scrollDuration = 0.5;
+var thisAnchor;
+
 function scrollToActive(thisNavItem) {
 
-	var scrollDuration = 0.5;
-	var thisAnchor;
-	var thisNavItemX = getDims(thisNavItem.id)[0] - getDims("navContainer01")[0];
-
+	thisNavItem_active = thisNavItem;
+	thisNavItemX = getDims(thisNavItem.id)[0] - getDims("navContainer01")[0];
 
 	switch(thisNavItem.id) {
 
@@ -63,7 +64,6 @@ function scrollToActive(thisNavItem) {
 			console.log('Move along folks! Nothing to see here...');
 	}
 
-
 	var scrollTL = new TimelineMax({delay:0});
 
 	scrollTL
@@ -71,3 +71,15 @@ function scrollToActive(thisNavItem) {
 		.to(window, scrollDuration, {scrollTo:{y:thisAnchor, autoKill:false}, ease:Power3.easeOut}, "frame01 +=0")
 	;
 }
+
+
+window.onresize = function() {
+	thisNavItemX = getDims(thisNavItem_active.id)[0] - getDims("navContainer01")[0];
+
+	var reScrollTL = new TimelineMax({delay:0});
+
+	reScrollTL
+		.set(NAV_btn_active, {x:thisNavItemX}, "frame01 +=0")
+		.set(window, {scrollTo:{y:thisAnchor, autoKill:false}}, "frame01 +=0")
+	;
+};
